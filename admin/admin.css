@@ -1,0 +1,131 @@
+/* Main styles */
+.header-container {
+  display: flex; /* Make the header container a flexbox */
+  align-items: center; /* Vertically center the content within the header */
+  background-color: #0056b3;
+}
+
+.logo-container {
+  width: 100px; /* Specify the container size */
+  height: 100px; /* Specify the container size */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain; /* Ensure the logo fits within the container without distortion */
+}
+
+.company-name {
+  margin-top: 0;  /* Remove the top margin */
+  margin-right: 30px;  /* Add left margin to position next to the logo */
+}
+
+main {
+    display: flex;
+    justify-content: space-between; /* Distribute space between children */
+    width: 100%;
+    margin: 0 auto; /* Center the main content horizontally */
+    padding: 20px;
+    background-attachment: fixed;
+    background-color: aquamarine;
+  }
+  
+  /* Center content */
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Set Odds section */
+  #set-odds {
+    width: 100%;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  #set-odds h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #odds-form {
+    width: 100%;
+  }
+  
+  #match-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+  }
+  
+  .match {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  .match .game-date {
+    flex: 1 0 120px; /* Set flex basis for consistent spacing */
+    margin-right: 10px; /* Add margin to the right of the date input for spacing */
+  }
+  
+  .match .kickoff-time {
+    flex: 1 0 100px; /* Set flex basis for consistent spacing */
+    /* You can also set margin-left if you want more space */
+  }
+  .match .team-name {
+    font-weight: bold;
+    flex-basis: 20%;
+  }
+  
+  .match input[type="number"] {
+    width: 25%;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #odds-form button[type="submit"] {
+    background-color: #007bff;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #odds-form button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .footer {
+    background-color: hsl(226, 70%, 30%);
+    color: #333;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .footer-content {
+    display: flex;  /* Enables flexbox layout */
+    align-items: center;  /* Vertically centers the content */
+  }
+  
+  .footer-logo {
+    width: 100px;  /* Adjust logo size as needed */
+    height: 100px;  /* Adjust logo size as needed */
+  }
+  

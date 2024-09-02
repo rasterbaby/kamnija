@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Set Odds</title>
+  <link rel="stylesheet" href="admin.css">
+  
+</head>
+<body>
+  <div class="header-container">
+    <div class="logo-container">
+        <img src="img/logo.png" alt="Pallte Technologies Limited Logo" class="logo">
+    </div>
+    <div class="company-name">
+        <h1>Pallte Technologies Limited</h1>
+    </div>
+</div>
+  <main>
+    <section id="set-odds" class="center">
+      <h2>Set Odds for Matches (Team A - L)</h2>
+      <form id="odds-form">
+        <ul id="match-list">
+          <li>
+            <div class="match">
+              <div class="team-name">Team A</div>
+              <input type="number" class="odd" name="odds_team_a" placeholder="Odds for Team A Win" min="1" max="10" step="0.01" required>
+              <input type="number" class="odd" name="odds_draw_a_b" placeholder="Odds for Draw" min="1" max="10" step="0.01" required>
+              <input type="number" class="odd" name="odds_team_b" placeholder="Odds for Team B Win" min="1" max="10" step="0.01" required>
+              <div class="team-name">Team B</div>
+              <input type="date" class="game-date" name="game_date_a" placeholder="Date of Game" required>
+              <input type="time" class="kickoff-time" name="kickoff_time_a" placeholder="Kick-off Time" required>
+            </div>
+          </li>
+          
+          <li>
+            <div class="match">
+              <div class="team-name">Team C</div>
+              <input type="number" class="odd" name="odds_team_c" placeholder="Odds for Team C Win" min="1" max="5" step="0.01" required>
+              <input type="number" class="odd" name="odds_draw_c_d" placeholder="Odds for Draw" min="1" max="5" step="0.01" required>
+              <input type="number" class="odd" name="odds_team_d" placeholder="Odds for Team D Win" min="1" max="5" step="0.01" required>
+              <div class="team-name">Team D</div>
+              <input type="date" class="game-date" name="game_date_c" placeholder="Date of Game" required>
+              <input type="time" class="kickoff-time" name="kickoff_time_c" placeholder="Kick-off Time" required>
+            </div>
+          </li>
+          
+          <li>
+            <div class="match">
+              <div class="team-name">Team E</div>
+              <input type="number" class="odd" name="odds_team_e" placeholder="Odds for Team E Win" min="1" max="10" step="0.01" required>
+              <input type="number" class="odd" name="odds_draw_e_f" placeholder="Odds for Draw" min="1" max="10" step="0.01" required>
+              <input type="number" class="odd" name="odds_team_f" placeholder="Odds for Team F Win" min="1" max="10" step="0.01" required>
+              <div class="team-name">Team F</div>
+              <input type="date" class="game-date" name="game_date_e" placeholder="Date of Game" required>
+              <input type="time" class="kickoff-time" name="kickoff_time_e" placeholder="Kick-off Time" required>
+            </div>
+          </li>
+          
+          <li>
+            <div class="match">
+              <div class="team-name">Team G</div>
+              <input type="number" class="odd" name="odds_team_g" placeholder="Odds for Team G Win" min="1" max="10" step="0.01" required>
+              <input type="number" class="odd" name="odds_draw_g_h" placeholder="Odds for Draw" min="1" max="10" step="0.01" required>
+              <input type="number" class="odd" name="odds_team_h" placeholder="Odds for Team H Win" min="1" max="10" step="0.01" required>
+              <div class="team-name">Team H</div>
+              <input type="date" class="game-date" name="game_date_g" placeholder="Date of Game" required>
+              <input type="time" class="kickoff-time" name="kickoff_time_g" placeholder="Kick-off Time" required>
+            </div>
+          </li>
+          
+          <li>
+            <div class="match">
+              <div class="team-name">Team I</div>
+              <input type="number" class="odd" name="odds_team_i" placeholder="Odds for Team I Win" min="1" max="10" step="0.01" required>
+              <input type="number" class="odd" name="odds_draw_i_j" placeholder="Odds for Draw" min="1" max="10" step="0.01" required>
+              <input type="number" class="odd" name="odds_team_j" placeholder="Odds for Team J Win" min="1" max="10" step="0.01" required>
+              <div class="team-name">Team J</div>
+              <input type="date" class="game-date" name="game_date_i" placeholder="Date of Game" required>
+              <input type="time" class="kickoff-time" name="kickoff_time_i" placeholder="Kick-off Time" required>
+            </div>
+          </li>
+          
+          <li>
+            <div class="match">
+              <div class="team-name">Team K</div>
+              <input type="number" class="odd" name="odds_team_k" placeholder="Odds for Team K Win" min="1" max="5" step="0.01" required>
+              <input type="number" class="odd" name="odds_draw_k_l" placeholder="Odds for Draw" min="1" max="5" step="0.01" required>
+              <input type="number" class="odd" name="odds_team_l" placeholder="Odds for Team L Win" min="1" max="5" step="0.01" required>
+              <div class="team-name">Team L</div>
+              <input type="date" class="game-date" name="game_date_k" placeholder="Date of Game" required>
+              <input type="time" class="kickoff-time" name="kickoff_time_k" placeholder="Kick-off Time" required>
+            </div>
+          </li>
+          
+        </ul>
+        <button type="submit">Save Odds</button>
+      </form>
+    </section>
+  </main>
+  <div class="footer">
+    <div class="footer-content">
+      <img src="img/logo.png" alt="Pallte Technologies Limited Logo" class="footer-logo">
+      <p>&copy; 2024 Pallte Technologies Limited</p>
+    </div>
+  </div>
+  
+  <script src="admin.js"></script> 
+</body>
+</html>
